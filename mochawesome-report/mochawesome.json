@@ -1,0 +1,117 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-08-11T21:25:11.583Z",
+    "end": "2022-08-11T21:27:13.451Z",
+    "duration": 121868,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "bc9aba37-3582-4672-b352-3a828febcb08",
+      "title": "",
+      "fullFile": "cypress\\integration\\examples\\BDD\\HotelBooking.feature",
+      "file": "cypress\\integration\\examples\\BDD\\HotelBooking.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "403f9fca-d874-43f5-acc1-33e5a6006f93",
+          "title": "Hotel booking process journey - happy path",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Hotel Booking - part1",
+              "fullTitle": "Hotel booking process journey - happy path Hotel Booking - part1",
+              "timedOut": null,
+              "duration": 73344,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "4ad2c3f5-4bae-427f-8c7a-b2f2eb25fc8f",
+              "parentUUID": "403f9fca-d874-43f5-acc1-33e5a6006f93",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Hotel Booking - part2",
+              "fullTitle": "Hotel booking process journey - happy path Hotel Booking - part2",
+              "timedOut": null,
+              "duration": 38527,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "799c602c-ee82-46d4-ab54-1d11524412c8",
+              "parentUUID": "403f9fca-d874-43f5-acc1-33e5a6006f93",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "4ad2c3f5-4bae-427f-8c7a-b2f2eb25fc8f",
+            "799c602c-ee82-46d4-ab54-1d11524412c8"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 111871,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "useInlineDiffs": false
+      },
+      "version": "4.0.1"
+    },
+    "marge": {
+      "options": null,
+      "version": "4.0.1"
+    }
+  }
+}

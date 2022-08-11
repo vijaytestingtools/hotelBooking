@@ -1,0 +1,357 @@
+[
+  {
+    "description": "    This scenario reserves a hotel room",
+    "keyword": "Feature",
+    "name": "Hotel booking process journey - happy path",
+    "line": 1,
+    "id": "hotel-booking-process-journey---happy-path",
+    "tags": [],
+    "uri": "HotelBooking.feature",
+    "elements": [
+      {
+        "id": "hotel-booking-process-journey---happy-path;hotel-booking---part1",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Hotel Booking - part1",
+        "tags": [
+          {
+            "name": "@Regression",
+            "line": 4
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "user open application Page",
+            "result": {
+              "status": "passed",
+              "duration": 7157000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "hotel"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Berns hotel"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 7,
+            "name": "user Search for hotel",
+            "result": {
+              "status": "passed",
+              "duration": 5812000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "CheckInDate",
+                      "CheckOutDate"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "August 26, 2022",
+                      "August 27, 2022"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 10,
+            "name": "user click on check-in date and check-out date to enter dates",
+            "result": {
+              "status": "passed",
+              "duration": 4983000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "user click on the search button",
+            "result": {
+              "status": "passed",
+              "duration": 4819000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "Booking options are displayed",
+            "result": {
+              "status": "passed",
+              "duration": 146000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "user select book now button for a room",
+            "result": {
+              "status": "passed",
+              "duration": 4919000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "user select confirm booking",
+            "result": {
+              "status": "passed",
+              "duration": 3059000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "booking summary is displayed",
+            "result": {
+              "status": "passed",
+              "duration": 4312000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "FirstName",
+                      "LastName",
+                      "Phone",
+                      "Email"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Vijay",
+                      "Bompally",
+                      "7466858436",
+                      "vijaytestingtools@gmail.com"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 18,
+            "name": "user select customer details",
+            "result": {
+              "status": "passed",
+              "duration": 20334000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Address",
+                      "City",
+                      "PostCode",
+                      "Country"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Westfield",
+                      "London",
+                      "W127GF",
+                      "United Kingdom"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 21,
+            "name": "user select billing address details",
+            "result": {
+              "status": "passed",
+              "duration": 8397000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "CardName",
+                      "CardType",
+                      "CardNumber",
+                      "ExpiryDate",
+                      "CVV"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Vijay",
+                      "VISA",
+                      "4111 1111 1111 1111",
+                      "10/25",
+                      "123"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 24,
+            "name": "user select payment details",
+            "result": {
+              "status": "passed",
+              "duration": 8175000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 27,
+            "name": "user select pay now button",
+            "result": {
+              "status": "passed",
+              "duration": 1346000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 28,
+            "name": "Booking should be successfull",
+            "result": {
+              "status": "passed",
+              "duration": 12000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "hotel-booking-process-journey---happy-path;hotel-booking---part2",
+        "keyword": "Scenario",
+        "line": 31,
+        "name": "Hotel Booking - part2",
+        "tags": [
+          {
+            "name": "@Regression",
+            "line": 30
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 32,
+            "name": "user open application Page",
+            "result": {
+              "status": "passed",
+              "duration": 11103000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 33,
+            "name": "user enters london in the search bar",
+            "result": {
+              "status": "passed",
+              "duration": 9510000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 34,
+            "name": "user click on London tag as suggested destinations",
+            "result": {
+              "status": "passed",
+              "duration": 1176000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "CheckInDate",
+                      "CheckOutDate"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "August 26, 2022",
+                      "August 27, 2022"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 35,
+            "name": "user click on check-in date and check-out date to enter dates",
+            "result": {
+              "status": "passed",
+              "duration": 7362000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 38,
+            "name": "user click on the search button",
+            "result": {
+              "status": "passed",
+              "duration": 4813000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 39,
+            "name": "user click on select rooms button on any hotel except first and last",
+            "result": {
+              "status": "passed",
+              "duration": 5188000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 40,
+            "name": "User should be on Get A Room page",
+            "result": {
+              "status": "passed",
+              "duration": 225000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
